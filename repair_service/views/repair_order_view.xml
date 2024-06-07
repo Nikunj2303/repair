@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+       <record id="view_repair_order_form_inherit" model="ir.ui.view">
+            <field name="name">repair.order.form.inherit</field>
+            <field name="model">repair.order</field>
+            <field name="inherit_id" ref="repair.view_repair_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='parts']" position="before">
+                    <page string="service_ids" name="new_page">
+                        <field name="service_ids">
+                            <tree>
+                                <field name="product_id"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
