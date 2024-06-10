@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="view_service_service_form" model="ir.ui.view">
+            <field name="name">service.service.form</field>
+            <field name="model">service.service</field>
+            <field name="arch" type="xml">
+                <form string="Service for Repairs">
+                    <sheet>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="repair_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
